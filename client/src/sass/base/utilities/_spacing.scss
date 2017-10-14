@@ -1,0 +1,43 @@
+
+
+
+
+$padding-rules: "padding", "padding-top", "padding-bottom", "padding-left", "padding-right";
+$margin-rules: "margin", "margin-top", "margin-bottom", "margin-left", "margin-right";
+
+@for $i from 0 through 8 {
+	@each $padding-rule in $padding-rules {
+		.#{$padding-rule}-lv#{$i} {
+			#{$padding-rule}: if($i == 0, 0, #{$i * $baseline}) !important;
+		}
+	}
+
+	.padding-top-bottom-lv#{$i} {
+		padding-top: if($i == 0, 0, #{$i * $baseline});
+		padding-bottom: if($i == 0, 0, #{$i * $baseline});
+	}
+
+	.padding-left-right-lv#{$i} {
+		padding-left: if($i == 0, 0, #{$i * $baseline});
+		padding-right: if($i == 0, 0, #{$i * $baseline});
+	}
+}
+
+@for $i from 0 through 8 {
+
+	@each $margin-rule in $margin-rules {
+		.#{$margin-rule}-lv#{$i} {
+			#{$margin-rule}: if($i == 0, 0, #{$i * $baseline}) !important;
+		}
+	}
+
+	.margin-top-bottom-lv#{$i} {
+		margin-top: if($i == 0, 0, #{$i * $baseline});
+		margin-bottom: if($i == 0, 0, #{$i * $baseline});
+	}
+
+	.margin-left-right-lv#{$i} {
+		margin-left: if($i == 0, 0, #{$i * $baseline});
+		margin-right: if($i == 0, 0, #{$i * $baseline});
+	}
+}

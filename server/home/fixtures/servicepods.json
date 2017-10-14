@@ -1,0 +1,62 @@
+[  
+   {  
+      "model":"home.servicepod",
+      "pk":1,
+      "fields":{  
+         "title":"Office Interiors",
+         "slug":"office-interiors",
+         "sort_order":1,
+         "delay":200
+      }
+   },
+   {  
+      "model":"home.servicepod",
+      "pk":2,
+      "fields":{  
+         "title":"Office Products",
+         "slug":"office-products",
+         "sort_order":2,
+         "delay":700
+      }
+   },
+   {  
+      "model":"home.servicepod",
+      "pk":3,
+      "fields":{  
+         "title":"Print",
+         "slug":"print",
+         "sort_order":3,
+         "delay":0
+      }
+   },
+   {  
+      "model":"home.servicepod",
+      "pk":4,
+      "fields":{  
+         "title":"Technology",
+         "slug":"technology",
+         "sort_order":4,
+         "delay":500
+      }
+   },
+   {  
+      "model":"home.servicepod",
+      "pk":5,
+      "fields":{  
+         "title":"Digital Services",
+         "slug":"digital-services",
+         "sort_order":5,
+         "delay":1000
+      }
+   },
+   {  
+      "model":"home.servicepod",
+      "pk":6,
+      "fields":{  
+         "title":"Corporate Social Responsibility",
+         "slug":"corporate-social-responsibility",
+         "sort_order":6,
+         "delay":0
+      }
+   }
+]

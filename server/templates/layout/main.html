@@ -1,0 +1,22 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Chif's Challenge{% block title %}{% endblock %}</title>
+        <link rel="stylesheet" href="{{CDN_STATIC_URL}}css/main.css" />
+    </head>
+    <body data-page="{% block dataPage %}{% endblock %}">
+        <div class="container">
+            {% include './partials/header.html' %}
+            <main role="main">
+                {% block body %}{% endblock %}
+            </main>
+            {% include './partials/footer.html' %}
+            </div>
+        <script src="{{CDN_STATIC_URL}}scripts/bundle.js"></script>
+    </body>
+</html>

@@ -1,0 +1,14 @@
+[  
+   {  
+      "model":"core.layout",
+      "pk":1,
+      "fields":{  
+         "created":"2017-08-06T13:04:00.355Z",
+         "modified":"2017-08-06T13:15:10.373Z",
+         "footer_about":"<h3>About Activ</h3>\r\n<p class=\"text-small\">At Activ Business Solutions we specialise in supplying organisations with a single source solution for all business products. Whether purchasing office furniture, redeveloping a company website, or reviewing office stationery, our focus is delivering products and services that enable customers to do what they do best \u2013 manage and grow their business.</p>",
+         "footer_links":"<h3>Explore</h3>\r\n<ul class=\"list\">\r\n    <li class=\"list__item\"><a href=\"/articles/about\">About</a></li>\r\n    <li class=\"list__item\"><a href=\"/articles/contact\">Contact</a></li>\r\n</ul>",
+         "footer_social":"<ul class=\"list-icons\">\r\n    <li class=\"list-icons__item\"><a href=\"https://twitter.com/ActivBusinessUK\" class=\"ion-social-twitter\"></a></li>\r\n    <li class=\"list-icons__item\"><a href=\"\" class=\"ion-social-facebook\"></a></li>\r\n    <li class=\"list-icons__item\"><a href=\"https://www.linkedin.com/company-beta/11217219/\" class=\"ion-social-linkedin\"></a></li>\r\n</ul>",
+         "copyright":"Activ Business Solutions. All rights reserved."
+      }
+   }
+]

@@ -1,0 +1,26 @@
+[  
+   {  
+      "model":"home.section",
+      "pk":1,
+      "fields":{  
+         "created":"2017-08-06T12:43:15.941Z",
+         "modified":"2017-08-06T12:46:34.613Z",
+         "title":"Welcome",
+         "left_column":"<h1 class=\"text-jumbo\" data-aos=\"fade-zoom-in\" data-aos-offset=\"200\" data-aos-easing=\"ease-in-sine\" data-aos-duration=\"500\">Activ Business Solutions</span>.</h1>\r\n        <p class=\"text-large\" data-aos=\"fade-zoom-in\" data-aos-offset=\"200\" data-aos-easing=\"ease-in-sine\" data-aos-duration=\"6500\" data-aos-delay=\"500\">Thames Valley's leading business products and services provider.</p>",
+         "right_column":"<img src=\"/static/images/content/home/mini-office.jpg\" class=\"img-responsive\" />",
+         "sort_order":1
+      }
+   },
+   {  
+      "model":"home.section",
+      "pk":2,
+      "fields":{  
+         "created":"2017-08-06T12:44:52.592Z",
+         "modified":"2017-08-06T12:46:39.374Z",
+         "title":"Our Ethos",
+         "left_column":"<img src=\"/static/images/content/home/assistant-pointing.jpg\" data-aos=\"fade-zoom-in\" data-aos-duration=\"500\" data-aos-delay=\"1000\" style=\"max-width: 100%; margin: 0 auto;\" />",
+         "right_column":"<h2 class=\"text-banner__heading\" data-aos=\"fade-zoom-in\" data-aos-duration=\"500\">Our Ethos</h2>\r\n        <div data-aos=\"fade-zoom-in\" data-aos-duration=\"500\">\r\n        <p>At Activ Business Solutions we specialise in supplying organisations with a single source solution for\r\nall business products. Whether purchasing office furniture, redeveloping a company website, or\r\nreviewing office stationery, our focus is delivering products and services that enable customers to do\r\nwhat they do best \u2013 manage and grow their business.</p>\r\n\r\n    <p>No two clients are the same and we believe they should be treated uniquely by their suppliers and\r\n    that the customer comes first in everything that we do.</p>\r\n\r\n    <p class=\"padding-bottom-lv2\">Our aim is to be something different within the market. Focusing on the changing landscape and\r\ninvesting in skills and support that will tangibly benefit our client base, specifically within digital\r\nmarketing and web design, is a focus that will enable our clients to grow and reduce their cost base\r\neven further, and we are committed to invest and deliver on the developments in technology and\r\ndigital solutions consistently.</p>\r\n        </div>\r\n        <a href=\"\" class=\"btn-piped btn-block\" style=\"width: 200px; text-align: center; color: black; font-size: 15px; text-transform: uppercase;\">\r\n            <span>Read more</span>\r\n            <span class=\"btn-piped__pipe  btn-piped__pipe--bottom\"></span>\r\n            <span class=\"btn-piped__pipe  btn-piped__pipe--top\"></span>\r\n            <span class=\"btn-piped__pipe  btn-piped__pipe--right\"></span>\r\n            <span class=\"btn-piped__pipe  btn-piped__pipe--left\"></span>\r\n        </a>",
+         "sort_order":2
+      }
+   }
+]

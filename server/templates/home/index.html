@@ -1,0 +1,29 @@
+{% extends 'layout/main.html' %}
+{% load static %}
+
+{% block title %} | Save the Date {% endblock %}
+{% block dataPage %}home{% endblock %}
+
+{% block body %}
+    <div class="t-welcome">
+        <div class="t-welcome__left-col">
+            <img src="{{CDN_STATIC_URL}}svg/soldier.svg" alt="logo" class="svg-solider" />
+        </div>
+        <div class="t-welcome__center-col">
+            <a href="" class="">
+                <img src="{{CDN_STATIC_URL}}svg/logo.svg" alt="logo" class="img-responsive" />
+            </a>
+            <div class="t-welcome__text-block" style="text-align: center;">
+                <p class="text-lead">Chif Challenges you to Walk a Marathon with him to Windsor Castle!</p>
+            </div>
+            <div class="t-welcome__newlife">
+                <a href="http://newlifecharity.co.uk">
+                    <img src="{{CDN_STATIC_URL}}svg/newlife.svg" alt="logo" class="img-responsive" />
+                </a>
+            </div>
+        </div>
+        <div class="t-welcome__right-col">
+            <img src="{{CDN_STATIC_URL}}svg/soldier.svg" alt="logo" class="svg-solider" />
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,14 @@
+
+.list-linear {
+    display: flex;
+
+}
+
+.list-linear__item {
+    margin: 0 6px;
+
+    &:first-child {
+        margin-left: 0;
+    }
+}
+

@@ -1,0 +1,33 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    color: $colour-white-100;
+    font-family: $font-family-body;
+    font-weight: 400;
+}
+
+h1, .h1 {
+    font-family: $font-family-heading;
+    @include font-size($font-size-h1);
+    line-height: $line-height-h1;
+    margin-bottom: $font-defualt-bottom-margin;
+}
+
+a {
+    color: $colour-white-100;
+}
+
+p, .p {
+    @include font-size($font-size-body);
+    line-height: $line-height-body;
+    margin-bottom: $font-defualt-bottom-margin;
+}
+
+.text-lead {
+    @include font-size(2);
+    @include media-breakpoint-up(md) {
+        @include font-size(3);
+    }
+}

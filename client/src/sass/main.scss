@@ -1,0 +1,44 @@
+//
+// notes on namespace prefixes
+//
+// .t = typography elements
+// .p = page elements
+// .u = utility classes
+// .c- = component ???
+
+@import 'base/reset';
+
+@import 'node_modules/bootstrap/scss/bootstrap-grid';
+
+@import 'abstract/variables';
+@import 'abstract/mixins/screen-reader';
+@import 'abstract/mixins/typography';
+@import 'abstract/mixins/utils';
+
+@import 'base/font-face';
+@import 'base/typography';
+@import 'base/utils';
+
+@import 'base/utilities/img';
+@import 'base/utilities/screen-reader';
+@import 'base/utilities/spacing';
+
+@import 'components/g-header';
+@import 'components/g-footer';
+@import 'components/lists';
+
+@import 'templates/holding-page';
+
+html, body {
+	height: 100%;
+}
+
+body {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cd1316+0,cd1316+51,bd1a1a+51,bd1a1a+100 */
+    background: #cd1316; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #cd1316 0%, #cd1316 51%, #bd1a1a 51%, #bd1a1a 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #cd1316 0%,#cd1316 51%,#bd1a1a 51%,#bd1a1a 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(150deg, #cd1316 0%,#cd1316 51%,#bd1a1a 51%,#bd1a1a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cd1316', endColorstr='#bd1a1a',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}

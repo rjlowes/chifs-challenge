@@ -1,0 +1,83 @@
+// .logo {
+//     background: #000; 
+//     color: #fff; 
+//     font-size: 70px; 
+//     border-radius: 50px; 
+//     padding: 5px;
+//     text-align: center;
+//     text-transform: uppercase;
+// }
+
+.t-welcome {
+    @extend .row;
+
+}
+
+.t-welcome__center-col {
+    @extend .col-sm-8;
+}
+
+.t-welcome__left-col,
+.t-welcome__right-col {
+    @extend .col-sm-2;
+    align-items: center;
+    @include media-breakpoint-only(xs) {
+        display: none;
+    }
+}
+
+.t-welcome__right-col {
+}
+
+.t-welcome__right-col {
+    @extend .col-sm-2;
+}
+
+.t-welcome__text-block {
+    text-align: center;
+}
+
+.t-welcome__newlife {
+    //@extend .padding-top-lv3, .padding-left-right-lv8, .padding-bottom-lv3;
+    padding: 12px 96px 12px 96px;
+
+    img {
+        margin: 0 auto;
+        max-width: 300px;
+    }
+}
+
+.svg-solider {
+    display: block;
+    margin: 0 auto;
+    width: 75px;
+}
+
+// .t-save-the-date__header {
+
+// }
+
+// .t-save-the-date {
+//     @extend .row;
+// }
+
+// .t-save-the-date__left-col {
+//     @extend .col-sm-2;
+// }
+
+// .t-save-the-date__center-col {
+//     @extend .col-sm-8;
+// }
+
+// .t-save-the-date__right-col {
+//     @extend .col-sm-2;
+// }
+
+
+//https://github.com/simple-icons/simple-icons/tree/develop/icons
+.social-icon {
+    background: white;
+    fill: red;
+    width: 100px;
+    height: 100px;
+}
