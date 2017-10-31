@@ -1,3 +1,19 @@
+// Environment
+//
+// Dynamically set with Gulp
+// ----------------------------------------------
+// $env: 'development';
+$assetPath: '/static/';
+
+// $ionicons-font-path: "../fonts" !default;
+
+@if($env == 'production') {
+    $assetPath: "https://d3fjj8r1act07f.cloudfront.net/";
+}
+
+// Baseline
+//
+// ---------------------------
 $baseline: 6px;
 
 $grid-gutter-width: 6px !default;
