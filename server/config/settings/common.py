@@ -36,7 +36,6 @@ env.read_env()
 # Application definition
 # ------------------------------------------------------------------------------
 DJANGO_APPS = [
-    'django_mptt_admin',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -46,7 +45,7 @@ DJANGO_APPS = [
 ]
 
 THIRD_PARTY_APPS = [
-    
+
 ]
 
 LOCAL_APPS = [

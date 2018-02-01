@@ -1,0 +1,13 @@
+{% extends 'layout/main.html' %}
+{% load static %}
+
+{% block title %} | {{ page.title }} {% endblock %}
+{% block dataPage %}page{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <div class="t-page">
+            {{ page.body|safe }}
+        </div>
+    </div>
+{% endblock %}

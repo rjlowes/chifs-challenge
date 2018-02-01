@@ -1,0 +1,22 @@
+<form action="{% url 'home:register' %}" method="POST" novalidate>
+    {% csrf_token %}
+    <div class="form-group">
+        <label for="id_name">Name</label>
+        {{ registration_form.name }}
+    </div>
+    <div class="form-group">
+        <label for="id_email">Email</label>
+        {{ registration_form.email }}
+    </div>
+    <div class="form-group">
+        <label for="id_email">Size</label>
+        {{ registration_form.tshirt_size }}
+        <p class="form-help">We need your t-shirt size for your free Chif's Challenge t-shirt.</p>
+    </div>
+    <div class="form-group">
+        <label for="id_email">Gender</label>
+        {{ registration_form.gender }}
+        <p class="form-help">We need to know your gender for your free Chif's Challenge t-shirt.</p>
+    </div>
+    <button type="submit" class="btn">Register &raquo;</button>
+</form>

@@ -1,8 +1,8 @@
 // .logo {
-//     background: #000; 
-//     color: #fff; 
-//     font-size: 70px; 
-//     border-radius: 50px; 
+//     background: #000;
+//     color: #fff;
+//     font-size: 70px;
+//     border-radius: 50px;
 //     padding: 5px;
 //     text-align: center;
 //     text-transform: uppercase;
@@ -21,9 +21,9 @@
 .t-welcome__right-col {
     @extend .col-sm-2;
     align-items: center;
-    @include media-breakpoint-only(xs) {
-        display: none;
-    }
+    // @include media-breakpoint-only(xs) {
+    //     display: none;
+    // }
 }
 
 .t-welcome__right-col {

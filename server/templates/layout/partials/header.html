@@ -1,5 +1,33 @@
-<header class="g-header">
-    <div class="g-header__banner">
-        {% include './banner.html' %}
+<header class="header">
+    <div class="header__main">
+        <button class="menu-btn" data-js-toggle-menu>
+            <img src="/static/svg/menu-open.svg" class="menu-btn__img" />
+        </button>
+        <div class="header__logo">
+            <a href="{% url 'home:home' %}" class="logo">
+                <img src="/static/svg/logo-sml.svg" class="logo__img" />
+            </a>
+        </div>
+        <nav class="nav">
+            <button class="nav__btn" data-js-toggle-menu>
+                <img src="/static/svg/menu-close.svg" class="menu-btn__img" />
+            </button>
+            <ul class="list-nav list-nav--right">
+                <li class="list-nav__item">
+                    <a href="{% url 'home:content' slug='about-chif' %}" class="list-nav__item-link list-nav__item-link--hilight">About Chif</a>
+                </li>
+                <li class="list-nav__item">
+                    <a href="{% url 'home:content' slug='sponsorship' %}" class="list-nav__item-link list-nav__item-link--hilight">Sponsorship</a>
+                </li>
+                <li class="list-nav__item"><a href="#about-chif" class="list-nav__item-link">Our Route</a></li>
+                <li class="list-nav__item"><a href="#about-chif" class="list-nav__item-link">Sign Up</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="sponsor">
+        <a href="" class="sponsor__link">
+            <span class="sponsor__text">Our fundraising page on:</span>
+            <img src="/static/svg/justgiving.svg" class="sponsor__logo" />
+        </a>
     </div>
 </header>

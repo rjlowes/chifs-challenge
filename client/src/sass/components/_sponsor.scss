@@ -1,0 +1,24 @@
+.sponsor {
+    display: flex;
+    justify-content: center;
+    background-color: #ac29b6;
+    width: 100%;
+}
+
+.sponsor__link {
+    align-items: center;
+    display: flex;
+    padding: 12px 0;
+}
+
+.sponsor__text {
+    @include font-size(2);
+    padding-right: 24px;
+    @include breakpoint-down() {
+        display: none;
+    }
+}
+
+.sponsor__logo {
+    width: 230px;
+}

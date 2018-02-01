@@ -1,5 +1,4 @@
 from django.conf import settings
-from core.models import Layout
 
 
 def get_env(request):

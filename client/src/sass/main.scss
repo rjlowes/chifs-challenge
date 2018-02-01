@@ -1,33 +1,33 @@
-//
-// notes on namespace prefixes
-//
-// .t = typography elements
-// .p = page elements
-// .u = utility classes
-// .c- = component ???
-
 @import 'base/reset';
 
-@import 'node_modules/bootstrap/scss/bootstrap-grid';
-
 @import 'abstract/variables';
+@import 'abstract/mixins/breakpoint';
 @import 'abstract/mixins/screen-reader';
 @import 'abstract/mixins/typography';
 @import 'abstract/mixins/utils';
 
 @import 'base/font-face';
+@import 'base/forms';
 @import 'base/typography';
 @import 'base/utils';
-
 @import 'base/utilities/img';
 @import 'base/utilities/screen-reader';
 @import 'base/utilities/spacing';
 
-@import 'components/g-header';
-@import 'components/g-footer';
+@import 'components/banner';
+@import 'components/banner-grid';
+@import 'components/header';
+@import 'components/footer';
+@import 'components/blocks';
+@import 'components/grids';
 @import 'components/lists';
+@import 'components/nav';
+@import 'components/sponsor';
+@import 'components/fig';
 
-@import 'templates/holding-page';
+@import 'templates/page';
+
+// @import 'templates/holding-page';
 
 html, body {
 	height: 100%;
@@ -37,17 +37,21 @@ body {
     background-color: #bd1a1a;
 }
 
-.background {
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cd1316+0,cd1316+51,bd1a1a+51,bd1a1a+100 */
-    background: #cd1316; /* Old browsers */
-    background: -moz-linear-gradient(146deg, #cd1316 0%, #cd1316 51%, #bd1a1a 51%, #bd1a1a 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(146deg, #cd1316 0%,#cd1316 51%,#bd1a1a 51%,#bd1a1a 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(146deg, #cd1316 0%,#cd1316 51%,#bd1a1a 51%,#bd1a1a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cd1316', endColorstr='#bd1a1a',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
+
+
+.container {
+    margin: 0 auto;
+    max-width: 100%;
+    padding-left: $grid-gutter;
+    padding-right: $grid-gutter;
+    width: 1140px;
+}
+
+.row {
+
+}
+
+.column {
+
 }

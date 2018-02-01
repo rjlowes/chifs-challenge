@@ -5,25 +5,21 @@
 {% block dataPage %}home{% endblock %}
 
 {% block body %}
-    <div class="t-welcome">
-        <div class="t-welcome__left-col">
-            <img src="{{CDN_STATIC_URL}}svg/soldier.svg" alt="logo" class="svg-solider" />
+    {% include './partials/jumbo-banner.html' %}
+    <div class="container">
+        <div class="block">
+            <h2 class="block-heading">About Chif's Challenge</h2>
+            <p>
+                Join Chif on his marathon walk through the beautiful, rural country side of Bucks and Berks and raise money for <a href="http://newlifecharity.co.uk/">NewLife</a>!
+            </p>
+            <p>
+                In the spirit of Chif and the challenge there will be no entrance fee. All we ask is you ask your loved ones, work colleagues, bosses and anyone you know to kindly support you on your MARATHON walk! All money raised will go directly to families and children supported by NEWLIFE. Everyone who takes part will receive a 'Chifs Challenge' T-shirt and a medal!
+            </p>
+            <p>To register, please fill in the details below. We'll then provide you with your information pack.</p>
         </div>
-        <div class="t-welcome__center-col">
-            <a href="" class="">
-                <img src="{{CDN_STATIC_URL}}svg/logo.svg" alt="logo" class="img-responsive" />
-            </a>
-            <div class="t-welcome__text-block" style="text-align: center;">
-                <p class="text-lead">Chif Challenges you to Walk a Marathon with him to Windsor Castle!</p>
-            </div>
-            <div class="t-welcome__newlife">
-                <a href="http://newlifecharity.co.uk">
-                    <img src="{{CDN_STATIC_URL}}svg/newlife.svg" alt="logo" class="img-responsive" />
-                </a>
-            </div>
-        </div>
-        <div class="t-welcome__right-col">
-            <img src="{{CDN_STATIC_URL}}svg/soldier.svg" alt="logo" class="svg-solider" />
-        </div>
+        <section class="block block--padded">
+            <h2 class="block-heading">Sign Up</h2>
+            {% include './partials/registration_form.html' %}
+        </section>
     </div>
 {% endblock %}

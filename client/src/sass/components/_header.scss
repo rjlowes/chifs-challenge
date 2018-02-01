@@ -1,0 +1,54 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    width: 100%;
+}
+
+.header__main {
+    @extend .container;
+    display: flex;
+    align-items: center;
+    @include breakpoint-down() {
+        justify-content: center;
+
+    }
+}
+
+.header__logo {
+    @include breakpoint-down() {
+        flex-grow: 1;
+        padding-right: 35px;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.header__nav {
+
+}
+
+.menu-btn {
+    cursor: pointer;
+    width: 35px;
+    // TODO use mixin
+    @media (min-width: 940px) {
+        display: none;
+    }
+    @include breakpoint-down() {
+        margin-right: auto;
+    }
+}
+
+.menu-btn__img {
+    width: 100%;
+}
+
+.logo {
+    display: inline-block;
+    padding: 27px 0;
+}
+
+.logo__img {
+
+}

@@ -1,0 +1,60 @@
+.banner {
+    display: flex;
+    align-items: center;
+    background: url('/static/images/castle-background.jpg') center center no-repeat;
+    max-height: 100vh;
+    height: calc(100vh - 150px); // -height of header
+}
+
+.banner__container {
+    @extend .container;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner__main {
+    width: 100%;
+}
+
+.banner__sub {
+    @include font-size(2);
+    padding: 0 10%;
+    width: 100%;
+    @include breakpoint-up() {
+        @include font-size(3.6);
+    }
+}
+
+.banner__ft {
+    justify-content: center;
+    display: flex;
+    width: 100%;
+}
+
+.banner__newlife {
+    width: 200px;
+    @include breakpoint-up() {
+        width: 300px;
+    }
+}
+
+// .jumbo-banner {
+//     display: flex;
+//     align-items: center;
+//     background: url('/static/images/castle-background.jpg') center center no-repeat;
+//     max-height: 100vh;
+//     height: 100vh;
+// }
+//
+// .jumbo-banner__text {
+//     // text-align: center;
+//     @media (min-width: 600px) {
+//         padding: 0 10%;
+//     }
+// }
+//
+// .jumbo-banner__footer {
+//     display: flex;
+//     justify-content: center;
+// }

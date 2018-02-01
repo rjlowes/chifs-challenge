@@ -1,0 +1,65 @@
+.nav {
+    @include breakpoint-down() {
+        background: #bd1a1a;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        left: 0;
+        position: fixed;
+        text-align: center;
+        top:0;
+        height: 100%;
+        width: 100%;
+        transform: translateY(-100%);
+        transition: transform .5s ease-in-out;
+
+        .js-menu-open & {
+            transform: translateY(0);
+        }
+    }
+
+    @include breakpoint-up() {
+        margin-left: auto;
+    }
+}
+
+.nav__btn {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 55px;
+
+    @include breakpoint-up() {
+        display: none;
+    }
+}
+
+.list-nav {
+    @include breakpoint-up() {
+        display: flex;
+    }
+}
+
+.list-nav__item {
+    @include breakpoint-down() {
+        margin: 30px 0;
+    }
+    @include breakpoint-up() {
+        margin-left: 24px;
+    }
+}
+
+.list-nav__item-link {
+    @include breakpoint-down() {
+        text-decoration: none;
+        .list-nav__item:first-child & {
+            text-decoration: underline;
+        }
+    }
+    @include breakpoint-up() {
+        color: #000;
+        .list-nav__item:first-child & {
+            color: #e70000;
+        }
+    }
+}

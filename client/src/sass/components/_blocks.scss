@@ -1,0 +1,13 @@
+.block {
+    text-align: center;
+    padding-left: $grid-gutter;
+    padding-right: $grid-gutter;
+    padding-top: 90px;
+
+    &--padded {
+        @media (min-width: 700px) {
+            padding-left: 25%;
+            padding-right: 25%;
+        }
+    }
+}

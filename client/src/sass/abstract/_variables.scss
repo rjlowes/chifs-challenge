@@ -15,11 +15,18 @@ $assetPath: '/static/';
 //
 // ---------------------------
 $baseline: 6px;
+$grid-gutter: 15px;
 
 $grid-gutter-width: 6px !default;
 $grid-gutter-width-base:     24px !default;
 
 $border-radius: 5px;
+
+// Breakpoints
+$bp-m: 576px;
+$bp-l: 768px;
+$bp-xl: 992px;
+
 
 // Typography
 //
