@@ -3,7 +3,7 @@ from home.models import Participant, TSHIRT_SIZE_CHOICES, GENDER
 
 
 class RegistrationForm(forms.ModelForm):
-    name = forms.CharField(label='Name', widget=forms.TextInput(attrs={'placeholder':'E.g. John Smith'}))
+    name = forms.CharField(label='Name')
     tshirt_size = forms.CharField(
         max_length=2,
         widget=forms.Select(choices=TSHIRT_SIZE_CHOICES),
