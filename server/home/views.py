@@ -1,5 +1,6 @@
 import json
 import urllib
+import urllib.request
 
 from django.views.generic import TemplateView, View
 from django.template.response import TemplateResponse
