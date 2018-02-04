@@ -2,10 +2,10 @@
 *.pyc
 node_modules
 client/dist
-active/db.sqlite3
+server/db.sqlite3
 .env
-active/static
-active/static/**
-active/static_root
-active/static_root/**
+server/static
+server/static/**
+server/static_root
+server/static_root/**
 aws-credentials.json
