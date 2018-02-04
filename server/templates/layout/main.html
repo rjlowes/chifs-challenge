@@ -8,6 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Chif's Challenge{% block title %}{% endblock %}</title>
         <link rel="stylesheet" href="{{CDN_STATIC_URL}}css/main.css" />
+        {% block headScript %}{% endblock %}
     </head>
     <body data-page="{% block dataPage %}{% endblock %}">
         {% include './partials/header.html' %}
@@ -18,7 +19,7 @@
         <div class="container">
 
             <main role="main">
-                
+
             </main>
             {% include './partials/footer.html' %}
             </div>

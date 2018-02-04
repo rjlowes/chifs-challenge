@@ -216,3 +216,11 @@ GOOGLE_ANALYTICS_ENABLED = False
 # Seperate admin assets from pws assets
 CDN_STATIC_URL = '/static/'
 CDN_MEDIA_URL = ''
+
+# Use this in the HTML code your site serves to users.
+GOOGLE_RECAPTCHA_SITE_KEY=env('GOOGLE_RECAPTCHA_SITE_KEY')
+# Use this for communication between your site and Google. Be sure to keep it a secret.
+GOOGLE_RECAPTCHA_SECRET_KEY=env('GOOGLE_RECAPTCHA_SECRET_KEY')
+
+print('GOOGLE_RECAPTCHA_SITE_KEY' + GOOGLE_RECAPTCHA_SITE_KEY )
+print('GOOGLE_RECAPTCHA_SECRET_KEY' + GOOGLE_RECAPTCHA_SECRET_KEY)

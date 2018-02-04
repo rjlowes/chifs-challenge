@@ -43,7 +43,11 @@ var _Screen2 = _interopRequireDefault(_Screen);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-exports.default = function () {};
+exports.default = function () {
+    $('html, body').animate({
+        scrollTop: $('[data-js-scroll-to]').offset().top
+    }, 2000);
+};
 
 },{"../util/Screen":5}],4:[function(require,module,exports){
 'use strict';

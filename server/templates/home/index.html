@@ -4,6 +4,10 @@
 {% block title %} | Save the Date {% endblock %}
 {% block dataPage %}home{% endblock %}
 
+{% block headScript %}
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+{% endblock %}
+
 {% block body %}
     {% include './partials/jumbo-banner.html' %}
     <div class="container">
@@ -18,7 +22,7 @@
             <p>To register, please fill in the details below. We'll then provide you with your information pack.</p>
         </div>
         <section class="block block--padded">
-            <h2 class="block-heading">Sign Up</h2>
+            <h2 class="block-heading"{% if invalid %} data-js-scroll-to{% endif %}>Sign Up</h2>
             {% include './partials/registration_form.html' %}
         </section>
     </div>
