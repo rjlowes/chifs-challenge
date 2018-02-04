@@ -12,6 +12,7 @@ ALLOWED_HOSTS = ['chifschallenge.co.uk','www.chifschallenge.co.uk', 'chifschalle
 # ------------------------------------------------------------------------------
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#static-root
 CDN_STATIC_URL = 'https://d3fjj8r1act07f.cloudfront.net/'
+STATIC_URL = 'https://d3fjj8r1act07f.cloudfront.net/'
 
 
 # CUSTOM SETTINGS
