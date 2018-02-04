@@ -1,11 +1,11 @@
 <header class="header">
     <div class="header__main">
         <button class="menu-btn" data-js-toggle-menu>
-            <img src="/static/svg/menu-open.svg" class="menu-btn__img" />
+            <img src="{{ CDN_STATIC_URL }}svg/menu-open.svg" class="menu-btn__img" />
         </button>
         <div class="header__logo">
             <a href="{% url 'home:home' %}" class="logo">
-                <img src="/static/svg/logo-sml.svg" class="logo__img" />
+                <img src="{{ CDN_STATIC_URL }}svg/logo-sml.svg" class="logo__img" />
             </a>
         </div>
         <nav class="nav">
@@ -27,7 +27,7 @@
     <div class="sponsor">
         <a href="" class="sponsor__link">
             <span class="sponsor__text">Our fundraising page on:</span>
-            <img src="/static/svg/justgiving.svg" class="sponsor__logo" />
+            <img src="{{ CDN_STATIC_URL }}svg/justgiving.svg" class="sponsor__logo" />
         </a>
     </div>
 </header>
