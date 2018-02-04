@@ -1,1 +1,35 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 32 40" enable-background="new 0 0 32 32" xml:space="preserve"><g display="none"><rect x="-27.333" y="-102.661" display="inline" fill="#000000" width="473.333" height="236"/></g><g display="none"><g display="inline"><g><rect x="0" y="25.349" fill="#000000" width="32" height="6.651"/></g><g><rect x="0" y="12.675" fill="#000000" width="32" height="6.651"/></g><g><rect x="0" y="0" fill="#000000" width="32" height="6.651"/></g></g></g><g><rect x="0" y="25.349" width="32" height="6.651"/><rect x="0" y="12.675" width="32" height="6.651"/><rect x="0" y="0" width="32" height="6.651"/></g><text x="0" y="47" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">Created by AlfredoCreates.com/Icons</text><text x="0" y="52" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">from the Noun Project</text></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="595.279px" height="841.891px" viewBox="0 0 595.279 841.891" enable-background="new 0 0 595.279 841.891"
+	 xml:space="preserve">
+<g display="none">
+	<rect x="-508.463" y="-1860.857" display="inline" width="8805.182" height="4390.192"/>
+</g>
+<g display="none">
+	<g display="inline">
+		<g>
+			<rect x="0" y="520.45" width="595.279" height="123.725"/>
+		</g>
+		<g>
+			<rect x="0" y="284.682" width="595.279" height="123.726"/>
+		</g>
+		<g>
+			<rect x="0" y="48.895" width="595.279" height="123.725"/>
+		</g>
+	</g>
+</g>
+<g display="none">
+	<rect x="0" y="520.45" display="inline" width="595.279" height="123.725"/>
+	<rect x="0" y="284.682" display="inline" width="595.279" height="123.726"/>
+	<rect x="0" y="48.895" display="inline" width="595.279" height="123.725"/>
+</g>
+<text transform="matrix(1 0 0 1 2.445579e-04 923.2109)" display="none" enable-background="new    " font-family="'HelveticaNeue-Bold'" font-size="93.0125">Created by AlfredoCreates.com/Icons</text>
+<text transform="matrix(1 0 0 1 2.445579e-04 1016.2266)" font-family="'HelveticaNeue-Bold'" font-size="93.0125">from the Noun Project</text>
+<g>
+	<polygon points="595.293,368.125 595.26,322.095 0.018,322.095 0.003,368.109 	"/>
+	<polygon points="595.293,642.743 595.26,596.714 0.018,596.714 0.003,642.728 	"/>
+	<polygon points="595.293,94.924 595.26,48.895 0.018,48.895 0.003,94.909 	"/>
+</g>
+</svg>

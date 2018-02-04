@@ -58,8 +58,16 @@
     }
     @include breakpoint-up() {
         color: #000;
-        .list-nav__item:first-child & {
+        text-decoration: none;
+        &:hover {
             color: #e70000;
+            text-decoration: underline;
         }
+        // .list-nav__item:first-child & {
+        //     display: none;
+        // }
+        // .list-nav__item:nth-child(2) & {
+        //     color: #e70000;
+        // }
     }
 }

@@ -1,8 +1,14 @@
+body {
+    padding-top: 148px;
+}
+
 .header {
     display: flex;
     flex-direction: column;
     background: #fff;
     width: 100%;
+    position: fixed;
+    top: 0;
 }
 
 .header__main {
@@ -18,9 +24,9 @@
 .header__logo {
     @include breakpoint-down() {
         flex-grow: 1;
-        padding-right: 35px;
+        // padding-left: 35px;
         display: flex;
-        justify-content: center;
+        // justify-content: center;
     }
 }
 
@@ -36,7 +42,8 @@
         display: none;
     }
     @include breakpoint-down() {
-        margin-right: auto;
+        margin-left: auto;
+        order: 2;
     }
 }
 
