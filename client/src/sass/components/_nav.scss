@@ -24,6 +24,7 @@
 }
 
 .nav__btn {
+    cursor: pointer;
     position: absolute;
     top: 22px;
     right: 12px;
@@ -47,6 +48,11 @@
     @include breakpoint-up() {
         margin-left: 24px;
     }
+    &--mob-only {
+        @include breakpoint-up() {
+            display: none;
+        }
+    }
 }
 
 .list-nav__item-link {
@@ -63,11 +69,5 @@
             color: #e70000;
             text-decoration: underline;
         }
-        // .list-nav__item:first-child & {
-        //     display: none;
-        // }
-        // .list-nav__item:nth-child(2) & {
-        //     color: #e70000;
-        // }
     }
 }

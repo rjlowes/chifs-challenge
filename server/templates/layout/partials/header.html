@@ -13,19 +13,22 @@
                 <img src="{{ CDN_STATIC_URL }}svg/menu-close.svg" class="menu-btn__img" />
             </button>
             <ul class="list-nav list-nav--right">
-                <li class="list-nav__item">
-                    <a href="{% url 'home:home' %}" class="list-nav__item-link list-nav__item-link--hilight">Home</a>
+                <li class="list-nav__item list-nav__item--mob-only">
+                    <a href="{% url 'home:home' %}" class="list-nav__item-link">Home</a>
                 </li>
                 <li class="list-nav__item">
-                    <a href="{% url 'home:content' slug='about-chif' %}" class="list-nav__item-link list-nav__item-link--hilight">About Chif</a>
+                    <a href="{% url 'home:content' slug='about-chif' %}" class="list-nav__item-link">About Chif</a>
                 </li>
                 <li class="list-nav__item">
-                    <a href="{% url 'home:content' slug='sponsorship' %}" class="list-nav__item-link list-nav__item-link--hilight">Sponsorship</a>
+                    <a href="{% url 'home:content' slug='sponsorship' %}" class="list-nav__item-link">Sponsorship</a>
+                </li>
+                <li class="list-nav__item">
+                    <a href="{% url 'home:content' slug='welcome-pack' %}" class="list-nav__item-link">Top Tips</a>
                 </li>
                 {% comment %}
                 <li class="list-nav__item"><a href="#about-chif" class="list-nav__item-link">Our Route</a></li>
                 {% endcomment %}
-                <li class="list-nav__item"><a href="{% url 'home:home' %}#form-registration" class="list-nav__item-link">Sign Up</a></li>
+                <li class="list-nav__item"><a href="{% url 'home:home' %}#form-registration" class="list-nav__item-link">Take the Challenge</a></li>
             </ul>
         </nav>
     </div>
