@@ -9,7 +9,7 @@
         <title>Chif's Challenge{% block title %}{% endblock %}</title>
         <link rel="stylesheet" href="{{CDN_STATIC_URL}}css/main.css" />
         <link rel="icon" type="image/png" href="{{CDN_STATIC_URL}}images/favicon-16x16.png" sizes="16x16">
-        <link rel="icon" type="image/png" href="{{CDN_STATIC_URL}}images/favicon-32x32.png" sizes="32x32">  
+        <link rel="icon" type="image/png" href="{{CDN_STATIC_URL}}images/favicon-32x32.png" sizes="32x32">
         <link rel="icon" type="image/png" href="{{CDN_STATIC_URL}}images/favicon-96x96.png" sizes="96x96">
         {% block headScript %}{% endblock %}
     </head>
@@ -18,14 +18,7 @@
         <main role="main">
             {% block body %}{% endblock %}
         </main>
-
-        <div class="container">
-
-            <main role="main">
-
-            </main>
-            {% include './partials/footer.html' %}
-            </div>
+        {% include './partials/footer.html' %}
         <script src="{{CDN_STATIC_URL}}scripts/bundle.js"></script>
     </body>
 </html>
