@@ -24,9 +24,7 @@ body {
 .header__logo {
     @include breakpoint-down() {
         flex-grow: 1;
-        // padding-left: 35px;
         display: flex;
-        // justify-content: center;
     }
 }
 
@@ -36,7 +34,7 @@ body {
 
 .menu-btn {
     cursor: pointer;
-    width: 35px;
+    width: 20px;
     // TODO use mixin
     @media (min-width: 940px) {
         display: none;
