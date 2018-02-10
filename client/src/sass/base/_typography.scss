@@ -48,9 +48,9 @@ h3, .h3 {
 }
 
 .block-heading {
-    @include font-size(2);
+    @include font-size(4);
     margin-bottom: 40px;
-    text-decoration: underline;
+    // text-decoration: underline;
     text-align: center;
 }
 
