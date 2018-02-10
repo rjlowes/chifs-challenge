@@ -8,3 +8,10 @@
 .t-page__footer {
     padding-top: 24px;
 }
+
+.t-page__message {
+    display: none;
+    [data-show-message] & {
+        display: block;
+    }
+}

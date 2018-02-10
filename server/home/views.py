@@ -23,7 +23,7 @@ class RegisterView(View):
             result = self.validateRecaptcha(request.POST.get('g-recaptcha-response'))
             if result['success']:
                 participant = form.save(request)
-                return HttpResponseRedirect('/info-pack')
+                return HttpResponseRedirect('/thank-you')
             else:
                 messages.error(request, 'Invalid reCAPTCHA. Please try again.')
                 return TemplateResponse(request, 'home/index.html', {'registration_form': form, 'invalid': True})
@@ -45,8 +45,13 @@ class RegisterView(View):
 
 class PageView(View):
     def get(self, request, slug):
+        show_message = False
+        if slug == 'thank-you':
+            slug = 'top-tips'
+            show_message = True
+
         page = get_object_or_404(Page, slug=slug)
-        return TemplateResponse(request, 'home/page.html', {'page': page})
+        return TemplateResponse(request, 'home/page.html', {'page': page, 'show_message': show_message})
 
 class WelcomePackView(View):
     def get(self, request):

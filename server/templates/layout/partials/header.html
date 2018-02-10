@@ -13,8 +13,10 @@
                 <img src="{{ CDN_STATIC_URL }}svg/menu-close.svg" class="menu-btn__img" />
             </button>
             <ul class="list-nav list-nav--right">
+                {% comment "Optional note" %}
                 <li class="list-nav__item"><a href="{% url 'home:home' %}#form-registration" class="list-nav__item-link">Take the Challenge</a></li>
-                <li class="list-nav__item list-nav__item--mob-only">
+                {% endcomment %}
+                <li class="list-nav__item">
                     <a href="{% url 'home:home' %}" class="list-nav__item-link">Home</a>
                 </li>
                 <li class="list-nav__item">
@@ -24,7 +26,7 @@
                     <a href="{% url 'home:content' slug='sponsorship' %}" class="list-nav__item-link">Sponsorship</a>
                 </li>
                 <li class="list-nav__item">
-                    <a href="{% url 'home:content' slug='info-pack' %}" class="list-nav__item-link">Top Tips</a>
+                    <a href="{% url 'home:content' slug='top-tips' %}" class="list-nav__item-link">Top Tips</a>
                 </li>
                 {% comment %}
                 <li class="list-nav__item"><a href="#about-chif" class="list-nav__item-link">Our Route</a></li>
@@ -34,7 +36,7 @@
     </div>
     <div class="sponsor">
         <a href="https://www.justgiving.com/fundraising/chifschallenge" class="sponsor__link">
-            <span class="sponsor__text">Sponsor Chif here:</span>
+            <span class="sponsor__text">Chif's Challenge fundraising page:</span>
             <img src="{{ CDN_STATIC_URL }}svg/justgiving.svg" class="sponsor__logo" />
         </a>
     </div>
