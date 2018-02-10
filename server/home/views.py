@@ -14,7 +14,8 @@ from home.models import Page
 class HomeView(View):
     def get(self, request):
         form = RegistrationForm()
-        return TemplateResponse(request, 'home/index.html', {'registration_form': form})
+        page = get_object_or_404(Page, slug="home")
+        return TemplateResponse(request, 'home/index.html', {'registration_form': form, 'page': page})
 
 class RegisterView(View):
     def post(self, request):
