@@ -43,7 +43,26 @@ var _Screen2 = _interopRequireDefault(_Screen);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+var scrollToElement = function scrollToElement($el) {
+    console.log($el);
+    $('html, body').animate({
+        scrollTop: $el.offset().top
+    }, 2000);
+};
+
+var scrollOnClick = function scrollOnClick() {
+    // data-js-scroll="#take-the-challenge"
+    $('[data-js-click-scroll]').click(function (e) {
+        e.preventDefault();
+        var selector = $(e.currentTarget).data('js-click-scroll');
+        var $el = $(selector);
+        scrollToElement($el);
+    });
+};
+
 exports.default = function () {
+    scrollOnClick();
+
     $('html, body').animate({
         scrollTop: $('[data-js-scroll-to]').offset().top
     }, 2000);

@@ -2,7 +2,7 @@
     text-align: center;
     padding-left: $grid-gutter;
     padding-right: $grid-gutter;
-    padding-top: 90px;
+    padding-top: 160px;
 
     &--padded {
         @media (min-width: 700px) {
@@ -10,4 +10,8 @@
             padding-right: 25%;
         }
     }
+}
+
+.page-section {
+    margin-top: 48px;
 }
