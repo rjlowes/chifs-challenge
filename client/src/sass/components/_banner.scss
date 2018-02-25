@@ -36,16 +36,22 @@
 
 .banner__cirle {
     transform: rotate(10deg);
-    margin-right: -100px;
-    height: 100px;
-    width: 100px;
+    margin-right: -70px;
+    height: 70px;
+    width: 70px;
+    @include breakpoint-up() {
+        margin-right: -100px;
+        height: 100px;
+        width: 100px;
+    }
+
     img {
         width: 100%;
     }
 }
 
 .banner__newlife {
-    width: 200px;
+    width: 150px;
     @include breakpoint-up() {
         width: 300px;
     }
