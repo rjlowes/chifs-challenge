@@ -27,6 +27,7 @@ class Participant(TimeStampedModel):
 
     def __str__(self):
         online = " - registered online" if self.registered_online else " - registered by admin"
+        online += " ~ %s" % self.notes
         return "%s (%s) %s" % (self.name, self.email, online);
 
 class Page(TimeStampedModel):
