@@ -19,6 +19,11 @@
         {{ registration_form.email.errors }}
     </div>
     <div class="form-group">
+        <label for="id_email">Telephone</label>
+        {{ registration_form.telephone }}
+        {{ registration_form.telephone.errors }}
+    </div>
+    <div class="form-group">
         <label for="id_email">Size</label>
         {{ registration_form.tshirt_size }}
         <p class="form-help">We need your t-shirt size for your free Chif's Challenge t-shirt.</p>

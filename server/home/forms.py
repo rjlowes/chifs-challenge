@@ -15,4 +15,4 @@ class RegistrationForm(forms.ModelForm):
 
     class Meta:
         model = Participant
-        fields = ['name', 'email', 'tshirt_size', 'gender']
+        fields = ['name', 'email', 'telephone', 'tshirt_size', 'gender']

@@ -21,6 +21,7 @@ class Participant(TimeStampedModel):
     gender = models.CharField(max_length=1, choices=GENDER)
     registered_online = models.BooleanField(default=True, help_text='Keep track of anyone registered online or via admin by ourselves')
     notes = models.TextField()
+    telephone = models.CharField(max_length=20, blank=True)
 
     class Meta:
         db_table = 'participant'
@@ -28,7 +29,7 @@ class Participant(TimeStampedModel):
     def __str__(self):
         online = " - registered online" if self.registered_online else " - registered by admin"
         online += " ~ %s" % self.notes
-        return "%s (%s) %s" % (self.name, self.email, online);
+        return "%s (%s) (%s) %s" % (self.name, self.email, self.telephone, online);
 
 class Page(TimeStampedModel):
     slug = models.CharField(max_length=30, unique=True)
